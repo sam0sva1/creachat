@@ -1,3 +1,8 @@
+var express = require('express');
+var app = express();
+
+app.use(express.static('public'));
+
 var WebSocketServer = require('ws');
 var wss = new WebSocketServer.Server({port: 8080});
 console.log('WebSocketServer started! Port 8080.')
@@ -23,4 +28,8 @@ wss.on('connection', function(ws) {
 		}
 
 	});
+});
+
+app.listen(80, function () {
+  console.log('Example app listening on port 80!');
 });
