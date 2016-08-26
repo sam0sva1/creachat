@@ -1,0 +1,46 @@
+.board {
+  outline: 1px solid red;
+  width: 500px;
+  height: 500px;
+  background-color: #F1FCFD;
+}
+.info {
+  background-color: #F6F1FD;
+  border: 1px solid #EAE2F8;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  clear: both;
+  margin: 4px 15%;
+}
+.greet {
+  background-color: #FDDEF3;
+  border: 1px solid #FCF2F9;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  clear: both;
+  margin: 4px 0;
+}
+.message {
+  padding: 3px;
+  border-radius: 5px;
+  width: 40%;
+  line-height: 14px;
+  box-shadow: 2px 2px 5px 2px #A8C2CC;
+  margin: 3px;
+}
+.board__owner-message {
+  border: 1px solid #D5FBFA;
+  background-color: #95EEED;
+  margin-right: 10px;
+  float: right;
+  clear: both;
+}
+.board__other-message {
+  border: 1px solid #E9FEE7;
+  background-color: #9EF692;
+  margin-left: 10px;
+  float: left;
+  clear: both;
+}
