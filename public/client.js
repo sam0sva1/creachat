@@ -1,7 +1,6 @@
 var board = document.querySelector('.board');
-var ws = new WebSocket('ws://reguletter.ru:8080');
+var ws = new WebSocket('ws://reguletter:8080');
 ws.onmessage = function(e) {
-	console.log('Новое сообщение: ' + e.data);
 	var message = JSON.parse(e.data);
 	var text = '';
 	switch(message.type) {
